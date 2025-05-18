@@ -17,7 +17,7 @@ async def generate_code_review(code: str):
         f"{code}"
     )
     payload = {
-        "model": "gpt-3.5-turbo",
+        "model": "gpt-3.5-turbo",  # Can change the AI model here
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.2
     }
